@@ -17,13 +17,13 @@ public void fractal(int x, int y, int len)
 	}
 	else
 	{
-		fractal(x + len /2, y, len/2);
-		fractal(x, y + len / 2,len/2);
-		fractal(x - len /2,y,len/2);
-		fractal(x, y - len / 2,len/2);
-		ellipse(x - len, y + len, len, len);
-		ellipse(x + len, y + len, len, len);
-		ellipse(x + len, y - len, len, len);
-		ellipse(x - len, y - len, len, len);
+		fractal(x + len, y, len/2);
+		fractal(x, y + len,len/2);
+		fractal(x - len,y,len/2);
+		fractal(x, y - len,len/2);
+		ellipse(x - len * 2, y + len * 2, len, len);
+		ellipse(x + len * 2, y + len * 2, len, len);
+		ellipse(x + len * 2, y - len * 2, len, len);
+		ellipse(x - len * 2, y - len * 2, len, len);
 	}
 }
